@@ -1,10 +1,10 @@
 import React from 'react'
+import Home from './Views/Home'
 
 const App = () => {
   return (
     <>
-      <h1>Matts Portfolio</h1>
-      <h2>I deployed it again</h2>
+      <Home />
     </>
   );
 }

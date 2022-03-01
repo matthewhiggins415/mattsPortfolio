@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar'
 import Home from './Views/Home'
 import Skills from './Views/Skills'
 import About from './Views/About'
-import Blog from './Views/Blog'
+import Projects from './Views/Projects'
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={< Home/>}/>
         <Route path="/about" element={< About/>}/>
-        <Route path="/blog" element={< Blog/>}/>
+        <Route path="/projects" element={<Projects />}/>
         <Route path="/skills" element={< Skills/>}/>
       </Routes>
     </Router>

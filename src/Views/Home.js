@@ -35,9 +35,6 @@ const Home = () => {
           <H2>using MERN stack</H2>
         </WordContainer>
       </Container>
-
-
-
     )
 }
 

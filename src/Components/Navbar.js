@@ -26,7 +26,7 @@ const Navbar = () => {
   }
   return (
     <Container>
-      <Link style={style} to="/">Matt Higgins</Link>
+      <Link style={style} to="/mattsPortfolio/">Matt Higgins</Link>
       <LinkContainer>
         <Link style={style} to="/about">About</Link>
         <Link style={style} to="/skills">Skills</Link>

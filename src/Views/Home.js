@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import profile from '../Views/profile.png'
 import styled from 'styled-components'
-import Modal from '../Components/Modal'
+import KakeiboModal from '../Components/KakeiboModal'
 
 const Container = styled.div`
   width: 100%;
@@ -110,7 +110,7 @@ const Home = () => {
 
     return (
       <>
-      <Modal modalOpen={modalOpen} toggleModal={toggleModal}/>
+      <KakeiboModal modalOpen={modalOpen} toggleModal={toggleModal}/>
       <Container>
         <TopContainer>
           <IMG  src={profile}/>
@@ -124,15 +124,15 @@ const Home = () => {
         <BottomContainer>
           <H2>Here's a few fun projects...</H2>
           <ProjectContainer>
-            <ProjectCard>
+            <ProjectCard >
               <h2>fullstack eCommerce</h2>
               <p>eCommerce website integrating stripe api for payment processing.</p>
             </ProjectCard>
-            <ProjectCard>
+            <ProjectCard onClick={toggleModal}>
               <h2>kakeibo budgeting</h2>
               <p>Full stack budgeting tool based on Japanese budgeting philosophy kakeibo, aka "the art of saving money"</p>
             </ProjectCard>
-            <ProjectCard onClick={toggleModal}>
+            <ProjectCard >
               <h2>property manager</h2>
               <p>Full stack app to manage properties, tenants and tasks for those properties</p>
             </ProjectCard>

@@ -18,7 +18,7 @@ const ModalContainer = styled.div`
 
 const Container = styled.div`
   width: 50%;
-  height: 90%;
+  height: auto;
   padding: 15px;
   background-color: black;
   z-index: 7;

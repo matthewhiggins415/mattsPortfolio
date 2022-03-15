@@ -30,15 +30,17 @@ const Container = styled.div`
 const H1 = styled.h1`
   color: white;
   text-align: center;
-  border-bottom: 3px solid rgba(233, 233, 233, 0.14);
+  border-bottom: 3px solid rgba(255, 45, 154, 0.8);
   padding-bottom: 10px;
 `
 
-const Button = styled.button`
-  padding: 20px;
+const A = styled.a`
   border: none;
   width: 150px;
-  height: 70px;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
   color: #fff;
   background-color: rgba(233, 233, 233, 0.14);
   cursor: pointer;
@@ -66,8 +68,8 @@ const KakeiboModal = ({ modalOpen, toggleModal }) => {
             </iframe>
           </div>
           <ButtonContainer>
-            <Button>open</Button>
-            <Button>github</Button>
+            <A href="https://matthewhiggins415.github.io/kakeibofrontend/" target="_blank">to live site</A>
+            <A href="https://github.com/matthewhiggins415/kakeibofrontend" target="_blank">to github</A>
           </ButtonContainer>
         </Container>
       </ModalContainer> 

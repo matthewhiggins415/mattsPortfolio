@@ -125,17 +125,20 @@ justify-content: space-evenly;
 
 `
 
-const Button = styled.button`
+const A = styled.a`
   padding: 15px;
   background-color: white;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer; 
   border: none;
+  text-decoration: none;
+  underline: none;
+  color: black;
+  transition: 300ms ease-in-out;
   &:hover {
-    transition: 300ms ease-in-out;
     background-color: rgba(255, 45, 154, 0.8);
     color: white;
     border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 `
 
@@ -147,7 +150,6 @@ const Home = () => {
     setModalOpen(!modalOpen)
   }
 
-  
 
     return (
       <>
@@ -170,7 +172,7 @@ const Home = () => {
             <p>Express, Node, mongoDb, sql, postreSQL </p>
           </SkillContainer>
           </SkillTopContainer>
-          <Button>Download resume</Button>
+          <A href="resume.pdf" download="Matt's Resume">Download resume</A>
         </SkillSection>
         <Section>
           <ProjectContainer>

@@ -4,8 +4,9 @@ import styled from 'styled-components'
 import KakeiboModal from '../Components/KakeiboModal'
 
 const Container = styled.div`
-  width: 100%;
-  height: 90vh;
+  width: 100vw;
+  min-height: 90vh;
+  height: auto;
   margin: 0 auto;
   position: absolute;
   display: flex;
@@ -14,59 +15,26 @@ const Container = styled.div`
   align-items: start;
   background-color: #192734;
 `
-const TopContainer = styled.div`
-  width: 90%;
-  display: flex;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: rgba(211, 211, 211, 0.14);
-  min-height: 40%;
-  max-height: 50%;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 15px auto;
-`
-
-const InfoContainer = styled.div`
-  height: 100%;
-  width: 30%;
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-`
 
 const IMG = styled.img`
   border-radius: 100%;
   width: 320px;
   height: 80%;
+  max-height: 350px;
   object-fit: cover;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: rgba(233, 233, 233, 0.14);
+  
 `
 
 const WordContainer = styled.div`
   color: white;
+  margin-top: 10px;
   min-width: 35%;
   background-color: rgba(233, 233, 233, 0.14);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-`
-
-const BottomContainer = styled.div`
-  width: 90%;
-  display: flex;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: rgba(211, 211, 211, 0.14);
-  min-height: 40%;
-  max-height: 50%;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 15px auto;
-  flex-direction: column;
+  box-shadow: rgba(255, 45, 154, 0.8) 0px 1px 4px;
 `
 
 const ProjectContainer = styled.div`
@@ -74,6 +42,7 @@ const ProjectContainer = styled.div`
   width: 90%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 `
 
 const H2 = styled.h2`
@@ -81,12 +50,43 @@ const H2 = styled.h2`
   color: #fff;
 `
 
-const ProjectCard = styled.div`
-  width: 200px;
+const Section = styled.div`
+  width: 80%;
+  min-height: 400px;
   height: auto;
+  margin: 10px auto;
+  background-color: rgba(211, 211, 211, 0.14); 
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  flex-wrap: wrap;
+`
+
+const SkillSection = styled.div`
+  width: 80%;
+  min-height: 400px;
+  height: auto;
+  margin: 10px auto;
+  background-color: rgba(211, 211, 211, 0.14); 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+  align-items: center;
+  flex-wrap: wrap;
+`
+
+const ProjectCard = styled.div`
+  height: auto;
+  width: 30%;
+  max-width: 275px;
+  min-width: 200px;
   background-color: rgba(211, 211, 211, 0.14);
   color: white;
+  overflow: hidden;
   padding: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -94,10 +94,51 @@ const ProjectCard = styled.div`
   border-radius: 15px;
   cursor: pointer;
   transition: 200ms ease-in-out;
-  &:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    &:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 `
+
+const SkillContainer = styled.div`
+  width: 40%;
+  min-width: 300px;
+  border-bottom: 4px solid rgba(255, 45, 154, 0.8);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+`
+
+const SkillTopContainer = styled.div`
+display: flex;
+background-color: rgba(233, 233, 233, 0.14);
+border-radius: 15px;
+width: 90%;
+margin: 0 auto;
+padding: 20px;
+flex-wrap: wrap; 
+justify-content: space-evenly;
+
+`
+
+const Button = styled.button`
+  padding: 15px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer; 
+  border: none;
+  &:hover {
+    transition: 300ms ease-in-out;
+    background-color: rgba(255, 45, 154, 0.8);
+    color: white;
+    border-radius: 15px;
+  }
+`
+
 
 const Home = () => {
   const [modalOpen, setModalOpen] = useState(false)
@@ -112,17 +153,26 @@ const Home = () => {
       <>
       <KakeiboModal modalOpen={modalOpen} toggleModal={toggleModal}/>
       <Container>
-        <TopContainer>
+        <Section>
           <IMG  src={profile}/>
-          <InfoContainer>
-            <WordContainer>
-              <h1>Hello 👋🏻, I'm Matt Higgins</h1>
-              <H2>and I build fullstack web apps</H2>
-            </WordContainer>
-          </InfoContainer>
-        </TopContainer>
-        <BottomContainer>
-          <H2>Here's a few fun projects...</H2>
+          <WordContainer>
+            <H2>Hello 👋🏻, I build fullstack web apps</H2>
+          </WordContainer>
+        </Section>
+        <SkillSection>
+          <SkillTopContainer>
+          <SkillContainer>
+            <H2>frontend</H2>
+            <p>HTML, CSS, Javascript, React, styled-components, Redux, AJAX, JSON, Stripe api </p>
+          </SkillContainer>
+          <SkillContainer>
+            <H2>backend</H2>
+            <p>Express, Node, mongoDb, sql, postreSQL </p>
+          </SkillContainer>
+          </SkillTopContainer>
+          <Button>Download resume</Button>
+        </SkillSection>
+        <Section>
           <ProjectContainer>
             <ProjectCard >
               <h2>fullstack eCommerce</h2>
@@ -137,7 +187,7 @@ const Home = () => {
               <p>Full stack app to manage properties, tenants and tasks for those properties</p>
             </ProjectCard>
           </ProjectContainer>
-        </BottomContainer>
+        </Section>
       </Container>
       </>
     )

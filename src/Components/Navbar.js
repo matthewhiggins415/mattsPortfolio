@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   padding: 10px;
   display: flex;
@@ -29,6 +29,7 @@ const Navbar = () => {
     <Container>
       <Link style={style} to="/mattsPortfolio/">Matt Higgins</Link>
       <LinkContainer>
+        <Link style={style} to="/home">Home</Link>
         <Link style={style} to="/about">About</Link>
         <Link style={style} to="/skills">Skills</Link>
         <Link style={style} to="/projects">Resume</Link>

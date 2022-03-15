@@ -52,26 +52,21 @@ const ButtonContainer = styled.div`
   margin-top: 20px;
 `
 
-const KakeiboModal = ({ modalOneOpen, toggleOneModal }) => {
+const FullstackModal = ({ modalTwoOpen, toggleTwoModal }) => {
   return (
   <>
   {
-    modalOneOpen ?  
+    modalTwoOpen ?  
       <ModalContainer>
         <Container>
-          <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }}onClick={toggleOneModal}/>
-          <H1>Kakeibo</H1>
-          <div style={{position: "relative", "paddingBottom": "56.25%", height: "0px"}}>
-            <iframe title="kakeibo demo"
-            src="https://www.loom.com/embed/fb67219748614f2198bf0f78eea1b53b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style={{position: "absolute", top: "0px", left: "0px", width: "100%", height: "100%"}}>
-            </iframe>
-          </div>
+          <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleTwoModal}/>
+          <H1>Fullstack eCommerce</H1>
           <ButtonContainer>
-            <A href="https://matthewhiggins415.github.io/kakeibofrontend/" target="_blank">to live site</A>
-            <A href="https://github.com/matthewhiggins415/kakeibofrontend" target="_blank">to github</A>
+            <A href="https://matthewhiggins415.github.io/kakeibofrontend/" target="_blank">frontend github</A>
+            <A href="https://github.com/matthewhiggins415/kakeibofrontend" target="_blank">backend github</A>
           </ButtonContainer>
           <div>
-            <p>Frontend: React, styled-components, framer-motion, axios, apexcharts</p>
+            <p>Frontend: Javascript, html, css, jquery</p>
             <p>Backend: Express, Mongodb, Mongoose</p>
           </div>
         </Container>
@@ -83,4 +78,4 @@ const KakeiboModal = ({ modalOneOpen, toggleOneModal }) => {
   )
 }
 
-export default KakeiboModal 
+export default FullstackModal 

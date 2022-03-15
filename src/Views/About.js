@@ -65,7 +65,7 @@ const About = () => {
       <Section>
         <MessageContainer>
           <H2>
-            Not a cook but love to eat. I struggle with portion control. Often. 
+            Not a cook but love to eat. Indian and Mexican foods are my favorite.
           </H2>
         </MessageContainer>
         <Img src={bbq}></Img>

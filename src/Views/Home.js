@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import profile from '../Views/profile.png'
 import styled from 'styled-components'
 import KakeiboModal from '../Components/KakeiboModal'
+import FullstackModal from '../Components/FullstackModal'
+import PropertyModal from '../Components/PropertyModal'
 
 const Container = styled.div`
   width: 100vw;
@@ -144,16 +146,28 @@ const A = styled.a`
 
 
 const Home = () => {
-  const [modalOpen, setModalOpen] = useState(false)
+  const [modalOneOpen, setModalOneOpen] = useState(false)
+  const [modalTwoOpen, setModalTwoOpen] = useState(false)
+  const [modalThreeOpen, setModalThreeOpen] = useState(false)
 
-  const toggleModal = () => {
-    setModalOpen(!modalOpen)
+
+  const toggleOneModal = () => {
+    setModalOneOpen(!modalOneOpen)
+  }
+  
+  const toggleTwoModal = () => {
+    setModalTwoOpen(!modalTwoOpen)
   }
 
+  const toggleThreeModal = () => {
+    setModalThreeOpen(!modalThreeOpen)
+  }
 
     return (
       <>
-      <KakeiboModal modalOpen={modalOpen} toggleModal={toggleModal}/>
+      <KakeiboModal modalOneOpen={modalOneOpen} toggleOneModal={toggleOneModal}/>
+      <FullstackModal modalTwoOpen={modalTwoOpen} toggleTwoModal={toggleTwoModal}/>
+      <PropertyModal modalThreeOpen={modalThreeOpen} toggleThreeModal={toggleThreeModal}/>
       <Container>
         <Section>
           <IMG  src={profile}/>
@@ -176,15 +190,15 @@ const Home = () => {
         </SkillSection>
         <Section>
           <ProjectContainer>
-            <ProjectCard >
+            <ProjectCard onClick={toggleTwoModal}>
               <h2>fullstack eCommerce</h2>
               <p>eCommerce website integrating stripe api for payment processing.</p>
             </ProjectCard>
-            <ProjectCard onClick={toggleModal}>
+            <ProjectCard onClick={toggleOneModal}>
               <h2>kakeibo budgeting</h2>
               <p>Full stack budgeting tool based on Japanese budgeting philosophy kakeibo, aka "the art of saving money"</p>
             </ProjectCard>
-            <ProjectCard >
+            <ProjectCard onClick={toggleThreeModal}>
               <h2>property manager</h2>
               <p>Full stack app to manage properties, tenants and tasks for those properties</p>
             </ProjectCard>

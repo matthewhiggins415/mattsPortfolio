@@ -66,7 +66,7 @@ const FullstackModal = ({ modalTwoOpen, toggleTwoModal }) => {
             <A href="https://github.com/matthewhiggins415/kakeibofrontend" target="_blank">backend github</A>
           </ButtonContainer>
           <div>
-            <p>Frontend: Javascript, html, css, jquery</p>
+            <p>Frontend: React, styled-components, Stripe api, Axios</p>
             <p>Backend: Express, Mongodb, Mongoose</p>
           </div>
         </Container>

@@ -60,7 +60,7 @@ const PropertyModal = ({ modalThreeOpen, toggleThreeModal }) => {
       <ModalContainer>
         <Container>
           <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleThreeModal}/>
-          <H1>Fullstack eCommerce</H1>
+          <H1>Property Manager</H1>
           <ButtonContainer>
             <A href="https://matthewhiggins415.github.io/kakeibofrontend/" target="_blank">frontend github</A>
             <A href="https://github.com/matthewhiggins415/kakeibofrontend" target="_blank">backend github</A>

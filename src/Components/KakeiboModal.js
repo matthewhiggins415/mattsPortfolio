@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MdClose } from 'react-icons/md'
+import { motion, AnimatePresence } from 'framer-motion'
 
-const ModalContainer = styled.div`
+const ModalContainer = styled(motion.div)`
   width: 100vw;
   height: 100vh;
   background-color: pink;
@@ -57,9 +58,14 @@ const KakeiboModal = ({ modalOneOpen, toggleOneModal }) => {
   <>
   {
     modalOneOpen ?  
-      <ModalContainer>
+    <AnimatePresence>
+      <ModalContainer
+        initial={{ x: "100%", opacity: 0 }}
+        animate={{ x: "calc(100vw - 100%)", opacity: 1 }}
+        exit={{ x: "0%", opacity: 0 }}
+      >
         <Container>
-          <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }}onClick={toggleOneModal}/>
+          <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleOneModal}/>
           <H1>Kakeibo</H1>
           <div style={{position: "relative", "paddingBottom": "56.25%", height: "0px"}}>
             <iframe title="kakeibo demo"
@@ -76,8 +82,8 @@ const KakeiboModal = ({ modalOneOpen, toggleOneModal }) => {
           </div>
         </Container>
       </ModalContainer> 
+    </AnimatePresence>   
     : null
- 
   }
   </>
   )

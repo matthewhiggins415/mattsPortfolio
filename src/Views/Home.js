@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import KakeiboModal from '../Components/KakeiboModal'
 import FullstackModal from '../Components/FullstackModal'
 import PropertyModal from '../Components/PropertyModal'
+import { motion } from 'framer-motion'
 
 const Container = styled.div`
   width: 100vw;
@@ -18,7 +19,7 @@ const Container = styled.div`
   background-color: #192734;
 `
 
-const IMG = styled.img`
+const IMG = styled(motion.img)`
   border-radius: 100%;
   width: 320px;
   height: 80%;
@@ -52,7 +53,7 @@ const H2 = styled.h2`
   color: #fff;
 `
 
-const Section = styled.div`
+const Section = styled(motion.div)`
   width: 80%;
   min-height: 400px;
   height: auto;
@@ -102,7 +103,7 @@ const ProjectCard = styled.div`
   }
 `
 
-const SkillContainer = styled.div`
+const SkillContainer = styled(motion.div)`
   width: 40%;
   min-width: 300px;
   border-bottom: 4px solid rgba(255, 45, 154, 0.8);
@@ -170,12 +171,24 @@ const Home = () => {
       <PropertyModal modalThreeOpen={modalThreeOpen} toggleThreeModal={toggleThreeModal}/>
       <Container>
         <Section>
-          <IMG  src={profile}/>
+          <IMG  src={profile}
+           animate={{
+            // scale: [1, 2, 2, 1.5, 1, 1],
+            // rotate: [0, 0, 270, 270, 360, 0],
+            // borderRadius: ["20%", "30%", "50%", "25%", "34%", "50%"],
+            
+          }}
+          
+          />
           <WordContainer>
             <H2>Hello 👋🏻, I build fullstack web apps</H2>
           </WordContainer>
         </Section>
-        <SkillSection>
+        <SkillSection
+           initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           viewport={{ once: true }}
+        >
           <SkillTopContainer>
           <SkillContainer>
             <H2>frontend</H2>
@@ -188,7 +201,11 @@ const Home = () => {
           </SkillTopContainer>
           <A href="resume.pdf" download="Matt's Resume">Download resume</A>
         </SkillSection>
-        <Section>
+        <Section
+           initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           viewport={{ once: true }}
+        >
           <ProjectContainer>
             <ProjectCard onClick={toggleTwoModal}>
               <h2>fullstack eCommerce</h2>

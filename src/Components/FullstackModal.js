@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MdClose } from 'react-icons/md'
+import { motion } from 'framer-motion'
 
-const ModalContainer = styled.div`
+const ModalContainer = styled(motion.div)`
   width: 100vw;
   height: 100vh;
   background-color: pink;
@@ -57,7 +58,11 @@ const FullstackModal = ({ modalTwoOpen, toggleTwoModal }) => {
   <>
   {
     modalTwoOpen ?  
-      <ModalContainer>
+      <ModalContainer
+       initial={{ x: "100%" }}
+       animate={{ x: "calc(100vw - 100%)" }}
+      
+      >
         <Container>
           <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleTwoModal}/>
           <H1>Fullstack eCommerce</H1>

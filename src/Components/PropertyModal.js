@@ -66,8 +66,8 @@ const PropertyModal = ({ modalThreeOpen, toggleThreeModal }) => {
           <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleThreeModal}/>
           <H1>Property Manager</H1>
           <ButtonContainer>
-            <A href="https://matthewhiggins415.github.io/kakeibofrontend/" target="_blank">frontend github</A>
-            <A href="https://github.com/matthewhiggins415/kakeibofrontend" target="_blank">backend github</A>
+            <A href="https://github.com/matthewhiggins415/landlord-client" target="_blank">frontend github</A>
+            <A href="https://github.com/matthewhiggins415/tenant-organizer-fullstack" target="_blank">backend github</A>
           </ButtonContainer>
           <div>
             <p>Frontend: Javascript, html, css, jquery</p>

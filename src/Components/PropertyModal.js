@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MdClose } from 'react-icons/md'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const ModalContainer = styled(motion.div)`
   width: 100vw;
@@ -58,6 +58,7 @@ const PropertyModal = ({ modalThreeOpen, toggleThreeModal }) => {
   <>
   {
     modalThreeOpen ?  
+    <AnimatePresence>
       <ModalContainer
         initial={{ x: "100%" }}
         animate={{ x: "calc(100vw - 100%)" }}
@@ -65,6 +66,13 @@ const PropertyModal = ({ modalThreeOpen, toggleThreeModal }) => {
         <Container>
           <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleThreeModal}/>
           <H1>Property Manager</H1>
+
+          <div style={{position: "relative", "paddingBottom": "56.25%", height: "0px"}}><iframe 
+          title="easyRent demo"
+          src="https://www.loom.com/embed/5138af4a11cf4e6a8b5612c215ddba5b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style={{position: "absolute", top: "0px", left: "0px", width: "100%", height: "100%"}}></iframe></div>
+
+
+
           <ButtonContainer>
             <A href="https://github.com/matthewhiggins415/landlord-client" target="_blank">frontend github</A>
             <A href="https://github.com/matthewhiggins415/tenant-organizer-fullstack" target="_blank">backend github</A>
@@ -75,6 +83,7 @@ const PropertyModal = ({ modalThreeOpen, toggleThreeModal }) => {
           </div>
         </Container>
       </ModalContainer> 
+      </AnimatePresence>  
     : null
  
   }

@@ -146,7 +146,7 @@ const SkillContainer = styled(motion.div)`
   @media (max-width: 430px) {
     background-color: rgba(211, 211, 211, 0.14);
     min-width: 250px;
-
+    margin: 10px auto;
   }
 `
 

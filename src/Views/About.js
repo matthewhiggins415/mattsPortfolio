@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import bbq from '../Resources/bbq.jpg'
+import wireframe from '../Resources/wireframe.jpg'
+import wireframeUI from '../Resources/kakeiboUI.jpg'
 import motorcycle from '../Resources/motorcycle.jpg'
-import thumbsUp from '../Resources/thumbsUp.jpg'
 
 const Container = styled.div`
  box-sizing: border-box;
@@ -32,13 +32,32 @@ const Section = styled.div`
   padding: 20px;
 `
 
-const Img = styled.img`
-  width: 250px;
+const ImgOne = styled.img`
+  width: 300px;
   height: 300px;
   position: center;
   object-fit: cover;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
+`
+
+const ImgTwo = styled.img`
+  width: 300px;
+  height: 300px;
+  position: center;
+  object-fit: cover;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+`
+
+const ImgThree = styled.img`
+  width: 300px;
+  height: 300px;
+  position: center;
+  object-fit: contain;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  background-color: white;
 `
 
 const MessageContainer = styled.div`
@@ -55,25 +74,25 @@ const About = () => {
   return (
     <Container>
       <Section>
-        <Img src={thumbsUp}></Img>
+        <ImgOne src={motorcycle}></ImgOne>
         <MessageContainer>
           <H2>
-            From Bay Area, California and I am 29 years old. Programming is special to me because it is a skill I build upon every day and I can take it anywhere. 
+            From Bay Area, California and I am 29 years old. Programming is special to me because it is a skill I build every day and I can take it anywhere. 
           </H2>
         </MessageContainer>
       </Section>
       <Section>
+        <ImgTwo src={wireframe}></ImgTwo>
         <MessageContainer>
           <H2>
-            Not a cook but love to eat. Indian and Mexican foods are my favorite.
+            I love the satisfaction of taking an idea and turning into something useful and real. Taking a doodle..
           </H2>
         </MessageContainer>
-        <Img src={bbq}></Img>
       </Section>
       <Section>
-        <Img src={motorcycle}></Img>
+        <ImgThree src={wireframeUI}></ImgThree>
         <MessageContainer>
-          <H2>I like to travel by motorcycle whenever possible, always fun. This is Laos here 🇱🇦.
+          <H2>..And turning it into something users can interact with. Something I can say I built. 
           </H2>
         </MessageContainer>
       </Section>

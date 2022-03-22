@@ -25,6 +25,10 @@ const Container = styled.div`
   opacity: 06;
   color: white;
   border-radius: 15px;
+
+  @media (max-width: 430px) {
+    width: 80%;
+  }
 `
 
 const H1 = styled.h1`

@@ -6,6 +6,7 @@ import FullstackModal from '../Components/FullstackModal'
 import PropertyModal from '../Components/PropertyModal'
 import { motion } from 'framer-motion'
 
+
 const Container = styled.div`
   width: 100vw;
   min-height: 90vh;
@@ -27,6 +28,11 @@ const IMG = styled(motion.img)`
   object-fit: cover;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: rgba(233, 233, 233, 0.14);
+
+  @media (max-width: 430px) {
+    border-radius: 20px;
+    background-color: transparent;
+  }
   
 `
 
@@ -37,7 +43,7 @@ const WordContainer = styled.div`
   background-color: rgba(233, 233, 233, 0.14);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: rgba(255, 45, 154, 0.8) 0px 1px 4px;
+  box-shadow: rgba(255, 45, 154, 0.8) 0px 0px 0.25em
 `
 
 const ProjectContainer = styled.div`
@@ -101,6 +107,26 @@ const ProjectCard = styled.div`
     &:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
+
+  @media (max-width: 430px) {
+    min-width: 250px;
+  }
+`
+
+const SkillTopContainer = styled.div`
+  display: flex;
+  background-color: rgba(233, 233, 233, 0.14);
+  border-radius: 15px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+
+  @media (max-width: 430px) {
+    background-color: transparent;
+}
 `
 
 const SkillContainer = styled(motion.div)`
@@ -108,24 +134,20 @@ const SkillContainer = styled(motion.div)`
   min-width: 300px;
   border-bottom: 4px solid rgba(255, 45, 154, 0.8);
   height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
   padding: 15px;
   text-align: center;
   color: #fff;
-`
 
-const SkillTopContainer = styled.div`
-display: flex;
-background-color: rgba(233, 233, 233, 0.14);
-border-radius: 15px;
-width: 90%;
-margin: 0 auto;
-padding: 20px;
-flex-wrap: wrap; 
-justify-content: space-evenly;
+  @media (max-width: 430px) {
+    background-color: rgba(211, 211, 211, 0.14);
+    min-width: 250px;
 
+  }
 `
 
 const A = styled.a`

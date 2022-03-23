@@ -86,7 +86,7 @@ const SkillSection = styled.div`
   flex-wrap: wrap;
 `
 
-const ProjectCard = styled.div`
+const ProjectCard = styled(motion.div)`
   height: auto;
   width: 30%;
   max-width: 275px;

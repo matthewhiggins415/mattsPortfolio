@@ -7,6 +7,7 @@ import Skills from './Views/Skills'
 import About from './Views/About'
 import Projects from './Views/Projects'
 import GlobalStyle from './globalStyles'
+import { ContactUs } from './Views/ContactUs'
 
 const Container = styled.div`
   width: 0px;
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/about" element={< About/>}/>
         <Route path="/projects" element={<Projects />}/>
         <Route path="/skills" element={< Skills/>}/>
+        <Route path="/contact" element={< ContactUs />}/>
       </Routes>
     </Router>
   );

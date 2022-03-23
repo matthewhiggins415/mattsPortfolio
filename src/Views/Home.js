@@ -193,15 +193,7 @@ const Home = () => {
       <PropertyModal modalThreeOpen={modalThreeOpen} toggleThreeModal={toggleThreeModal}/>
       <Container>
         <Section>
-          <IMG  src={profile}
-           animate={{
-            // scale: [1, 2, 2, 1.5, 1, 1],
-            // rotate: [0, 0, 270, 270, 360, 0],
-            // borderRadius: ["20%", "30%", "50%", "25%", "34%", "50%"],
-            
-          }}
-          
-          />
+          <IMG src={profile} />
           <WordContainer>
             <H2>Hello 👋🏻, I build fullstack web apps</H2>
           </WordContainer>
@@ -221,7 +213,7 @@ const Home = () => {
             <p>Express, Node, mongoDb, sql, postreSQL </p>
           </SkillContainer>
           </SkillTopContainer>
-          <A href="resume.pdf" download="Matt's Resume">Download resume</A>
+          <A href="mattsResume.pdf" download="Matt's Resume">Download resume</A>
         </SkillSection>
         <Section
            initial={{ opacity: 0 }}

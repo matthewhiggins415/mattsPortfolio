@@ -195,7 +195,7 @@ const Home = () => {
         <Section>
           <IMG src={profile} />
           <WordContainer>
-            <H2>Hello 👋🏻, I build fullstack web apps</H2>
+            <H2>Software Engineer with a focus on frontend development.</H2>
           </WordContainer>
         </Section>
         <SkillSection

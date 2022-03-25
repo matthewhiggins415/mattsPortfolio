@@ -11,6 +11,13 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: center;
   background-color: #192734;
+
+  @media (max-width: 430px) {
+    width: 100%;
+    box-style: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
 `  
 
 const LinkContainer = styled.div`
@@ -18,6 +25,11 @@ const LinkContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width: 430px) {
+    width: 60%;
+    box-style: border-box;
+  }
 `
 
 const Navbar = () => {
@@ -26,8 +38,6 @@ const Navbar = () => {
     'textDecoration': 'none',
     'color': '#fff',
   }
-
-  
 
   return (
     <Container>

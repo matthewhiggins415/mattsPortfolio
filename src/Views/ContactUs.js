@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Form = styled.form`
   padding: 15px;
-  height: 50vh;
+  height: auto;
   width: 50%; 
   max-width: 450px;
   background-color: rgba(233, 233, 233, 0.14);
@@ -22,6 +22,18 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  @media (max-width: 630px) {
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  @media (max-width: 430px) {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
 `
 
 const H1 = styled.h1`
@@ -41,6 +53,8 @@ const Input = styled(motion.input)`
   border-radius: 4px;
   background-color: #fff;
   border: none;
+  margin: 8px auto;
+  width: 90%;
 `
 const Textarea = styled.textarea`
   outline: none;
@@ -49,6 +63,8 @@ const Textarea = styled.textarea`
   padding: 10px;
   height: 100px;
   font-family: Arial;
+  margin: 8px auto;
+  width: 90%;
 `
 
 export const ContactUs = () => {

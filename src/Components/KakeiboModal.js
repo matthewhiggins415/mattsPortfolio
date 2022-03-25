@@ -26,7 +26,7 @@ const Container = styled.div`
   color: white;
   border-radius: 15px;
 
-  @media (max-width: 430px) {
+  @media (max-width: 630px) {
     width: 80%;
   }
 `

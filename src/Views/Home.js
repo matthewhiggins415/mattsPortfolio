@@ -5,6 +5,7 @@ import KakeiboModal from '../Components/KakeiboModal'
 import FullstackModal from '../Components/FullstackModal'
 import PropertyModal from '../Components/PropertyModal'
 import { motion } from 'framer-motion'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 
 const Container = styled.div`
@@ -167,6 +168,14 @@ const A = styled.a`
   }
 `
 
+const LinkContainer = styled.div`
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`
+
 
 const Home = () => {
   const [modalOneOpen, setModalOneOpen] = useState(false)
@@ -196,6 +205,20 @@ const Home = () => {
           <IMG src={profile} />
           <WordContainer>
             <H2>Software Engineer with a focus on frontend development.</H2>
+            <LinkContainer>
+              <a
+                target="_blank"
+                href="https://github.com/matthewhiggins415"
+              >
+              <AiFillGithub style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px", color:"whitesmoke" }}/>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/mhiggie/"
+              >
+              <AiFillLinkedin style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px", color: "whitesmoke" }}/>
+              </a>
+            </LinkContainer>
           </WordContainer>
         </Section>
         <SkillSection

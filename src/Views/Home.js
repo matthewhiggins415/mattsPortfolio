@@ -7,7 +7,8 @@ import PropertyModal from '../Components/PropertyModal'
 import { motion } from 'framer-motion'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import kakeiboScreenshot from './kakeiboscreenshot.png'
-import easyRentScreenShot from './easyrentscreenshot.png'
+import easyRentScreenshot from './easyrentscreenshot.png'
+import goLocalScreenshot from './golocalscreenshot.png'
 
 
 const Container = styled.div`
@@ -253,18 +254,19 @@ const Home = () => {
         >
           <ProjectContainer>
             <ProjectCard onClick={toggleTwoModal}>
-              <h2>fullstack eCommerce</h2>
-              <p>eCommerce website integrating stripe api for payment processing.</p>
+              <h2>goLocal 🥕</h2>
+              <p>A group project built with three other colleagues.  This eComm site enables users to buy locally sourced foods online.</p>
+              <Img src={goLocalScreenshot} alt="goLocal sample image"/>
             </ProjectCard>
             <ProjectCard onClick={toggleOneModal}>
-              <h2>kakeibo budgeting</h2>
-              <p>Full stack budgeting tool based on Japanese budgeting philosophy kakeibo, aka "the art of saving money"</p>
+              <h2>kakeibo budgeting 💸</h2>
+              <p>Full stack budgeting tool based on Japanese budgeting philosophy kakeibo, aka "the art of saving money".</p>
               <Img src={kakeiboScreenshot} alt="kakeibo sample image"/>
             </ProjectCard>
             <ProjectCard onClick={toggleThreeModal}>
-              <h2>property manager</h2>
-              <p>Full stack app to manage properties, tenants and tasks for those properties</p>
-              <Img src={easyRentScreenShot} alt="easyRent sample image"/>
+              <h2>easyRent property manager 🏡</h2>
+              <p>Full stack app to manage properties, tenants and tasks for those properties.</p>
+              <Img src={easyRentScreenshot} alt="easyRent sample image"/>
             </ProjectCard>
           </ProjectContainer>
         </Section>

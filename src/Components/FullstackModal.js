@@ -71,11 +71,11 @@ const FullstackModal = ({ modalTwoOpen, toggleTwoModal }) => {
           <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleTwoModal}/>
           <H1>Fullstack eCommerce</H1>
           <ButtonContainer>
-            <A href="https://github.com/reactIsland/project-frontend" target="_blank">to frontend github</A>
-            <A href="https://github.com/reactIsland/Unit3-Project-Backend" target="_blank">to backend github</A>
+            <A href="https://reactisland.github.io/project-frontend/" target="_blank">to live site</A>
+            <A href="https://github.com/reactIsland/project-frontend" target="_blank">to github</A>
           </ButtonContainer>
           <div>
-            <p>Frontend: React, styled-components, Stripe api, Axios</p>
+            <p>Frontend: React, styled-components, Stripe API, Axios</p>
             <p>Backend: Express, Mongodb, Mongoose</p>
           </div>
         </Container>

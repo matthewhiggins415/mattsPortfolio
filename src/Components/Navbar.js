@@ -39,9 +39,17 @@ const Navbar = () => {
     'color': '#fff',
   }
 
+  const logo = { 
+    'textDecoration': 'none',
+    'color': '#fff',
+    'fontSize': '35px',
+    'letterSpacing': '1.5px', 
+    'fontWeight': '700'
+  }
+
   return (
     <Container>
-      <Link style={style} to="/mattsPortfolio/">Matt Higgins</Link>
+      <Link style={logo} to="/mattsPortfolio/">Matt Higgins</Link>
       <LinkContainer>
         <Link style={style} to="/home">Home</Link>
         <Link style={style} to="/about">About</Link>

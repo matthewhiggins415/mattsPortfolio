@@ -78,8 +78,8 @@ const PropertyModal = ({ modalThreeOpen, toggleThreeModal }) => {
 
 
           <ButtonContainer>
-            <A href="https://github.com/matthewhiggins415/landlord-client" target="_blank">frontend github</A>
-            <A href="https://github.com/matthewhiggins415/tenant-organizer-fullstack" target="_blank">backend github</A>
+            <A href="https://matthewhiggins415.github.io/easyRentFrontEnd/" target="_blank">to live site</A>
+            <A href="https://github.com/matthewhiggins415/easyRentFrontEnd" target="_blank">to github</A>
           </ButtonContainer>
           <div>
             <p>Frontend: Javascript, html, css, jquery</p>

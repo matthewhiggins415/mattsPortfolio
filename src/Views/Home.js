@@ -6,6 +6,8 @@ import FullstackModal from '../Components/FullstackModal'
 import PropertyModal from '../Components/PropertyModal'
 import { motion } from 'framer-motion'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import kakeiboScreenshot from './kakeiboscreenshot.png'
+import easyRentScreenShot from './easyrentscreenshot.png'
 
 
 const Container = styled.div`
@@ -176,6 +178,12 @@ const LinkContainer = styled.div`
   align-items: center;
 `
 
+const Img = styled.img`
+  height: 200px;
+  width: 250px;
+  object-fit: contain;
+`
+
 
 const Home = () => {
   const [modalOneOpen, setModalOneOpen] = useState(false)
@@ -251,10 +259,12 @@ const Home = () => {
             <ProjectCard onClick={toggleOneModal}>
               <h2>kakeibo budgeting</h2>
               <p>Full stack budgeting tool based on Japanese budgeting philosophy kakeibo, aka "the art of saving money"</p>
+              <Img src={kakeiboScreenshot} alt="kakeibo sample image"/>
             </ProjectCard>
             <ProjectCard onClick={toggleThreeModal}>
               <h2>property manager</h2>
               <p>Full stack app to manage properties, tenants and tasks for those properties</p>
+              <Img src={easyRentScreenShot} alt="easyRent sample image"/>
             </ProjectCard>
           </ProjectContainer>
         </Section>

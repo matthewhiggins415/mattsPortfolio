@@ -18,7 +18,7 @@ const ModalContainer = styled(motion.div)`
 
 const Container = styled.div`
   width: 50%;
-  height: auto;
+  height: fit-content;
   padding: 15px;
   background-color: black;
   z-index: 7;

@@ -69,7 +69,7 @@ const PropertyModal = ({ modalThreeOpen, toggleThreeModal }) => {
       >
         <Container>
           <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleThreeModal}/>
-          <H1>Property Manager</H1>
+          <H1>easyRent</H1>
 
           <div style={{position: "relative", "paddingBottom": "56.25%", height: "0px"}}><iframe 
           title="easyRent demo"

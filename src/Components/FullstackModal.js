@@ -69,7 +69,12 @@ const FullstackModal = ({ modalTwoOpen, toggleTwoModal }) => {
       >
         <Container>
           <MdClose style={{ position: "relative", cursor:"pointer", fontSize: "35px", "marginTop": "10px", "marginLeft": "10px" }} onClick={toggleTwoModal}/>
-          <H1>Fullstack eCommerce</H1>
+          <H1>goLocal</H1>
+          <div style={{position: "relative", "paddingBottom": "56.25%", height: "0px"}}>
+            <iframe title="kakeibo demo"
+            src="https://www.loom.com/embed/e36657bfd2b64b35890aee624be99d99" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style={{position: "absolute", top: "0px", left: "0px", width: "100%", height: "100%"}}>
+            </iframe>
+          </div>
           <ButtonContainer>
             <A href="https://reactisland.github.io/project-frontend/" target="_blank">to live site</A>
             <A href="https://github.com/reactIsland/project-frontend" target="_blank">to github</A>

@@ -121,7 +121,7 @@ const SkillTopContainer = styled.div`
   display: flex;
   background-color: rgba(233, 233, 233, 0.14);
   border-radius: 15px;
-  width: 90%;
+  width: 80%;
   height: auto;
   margin: 0 auto;
   padding: 20px;
@@ -150,7 +150,7 @@ const SkillContainer = styled(motion.div)`
   @media (max-width: 430px) {
     background-color: rgba(211, 211, 211, 0.14);
     min-width: 250px;
-    margin: 10px auto;
+    margin: 20px auto;
   }
 `
 
@@ -163,6 +163,7 @@ const A = styled.a`
   underline: none;
   color: black;
   transition: 300ms ease-in-out;
+  margin: 15px auto;
   &:hover {
     background-color: rgba(255, 45, 154, 0.8);
     color: white;
@@ -236,14 +237,14 @@ const Home = () => {
            viewport={{ once: true }}
         >
           <SkillTopContainer>
-          <SkillContainer>
-            <H2>frontend</H2>
-            <p>HTML, CSS, Javascript, React, styled-components, Redux, AJAX, JSON, Stripe api </p>
-          </SkillContainer>
-          <SkillContainer>
-            <H2>backend</H2>
-            <p>Express, Node, mongoDb, sql, postreSQL </p>
-          </SkillContainer>
+            <SkillContainer>
+              <H2>frontend</H2>
+              <p>HTML, CSS, Javascript, React, styled-components, Redux, AJAX, JSON, Stripe api </p>
+            </SkillContainer>
+            <SkillContainer>
+              <H2>backend</H2>
+              <p>Express, Node, mongoDb, sql, postreSQL </p>
+            </SkillContainer>
           </SkillTopContainer>
           <A href="mattsResume.pdf" download="Matt's Resume">Download resume</A>
         </SkillSection>

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  height: 10vh;
+  height: auto;
   width: auto;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -17,6 +17,7 @@ const Container = styled.div`
     box-style: border-box;
     margin: 0px;
     padding: 0px;
+    flex-direction: column;
   }
 `  
 
@@ -25,6 +26,7 @@ const LinkContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 20px;
 
   @media (max-width: 430px) {
     width: 60%;
@@ -44,7 +46,8 @@ const Navbar = () => {
     'color': '#fff',
     'fontSize': '35px',
     'letterSpacing': '1.5px', 
-    'fontWeight': '700'
+    'fontWeight': '700',
+    'marginTop': '10px'
   }
 
   return (

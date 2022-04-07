@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-// import wireframe from '../Resources/wireframe.jpg'
+import wireframe from '../Resources/wireframe.jpg'
 import wireframeUI from '../Resources/kakeiboUI.jpg'
 import motorcycle from '../Resources/motorcycle.jpg'
 
@@ -82,7 +82,7 @@ const About = () => {
         </MessageContainer>
       </Section>
       <Section>
-        {/* <ImgTwo src={wireframe}></ImgTwo> */}
+        <ImgTwo src={wireframe}></ImgTwo>
         <MessageContainer>
           <H2>
             I love the satisfaction of taking an idea and turning into something useful and real. Taking a doodle..

@@ -77,7 +77,7 @@ const About = () => {
         <ImgOne src={motorcycle}></ImgOne>
         <MessageContainer>
           <H2>
-            From Bay Area, California and I am 29 years old. Programming is special to me because it is a skill I build every day and I can take it anywhere. 
+            From Bay Area, California. Programming is special to me because it is a skill I build every day and I can take it anywhere. 
           </H2>
         </MessageContainer>
       </Section>

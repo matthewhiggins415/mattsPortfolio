@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import wireframe from '../Resources/wireframe.jpg'
+import wireframe from '../Resources/wireframe.png'
 import wireframeUI from '../Resources/kakeiboUI.jpg'
 import motorcycle from '../Resources/motorcycle.jpg'
 

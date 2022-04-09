@@ -246,7 +246,7 @@ const Home = () => {
               <p>Express, Node, mongoDb, sql, postreSQL </p>
             </SkillContainer>
           </SkillTopContainer>
-          <A href="fullstackResume.pdf" download="Matt's Resume">Download resume</A>
+          <A href="softwareengineeringresume.pdf" download="Matt's Resume">Download resume</A>
         </SkillSection>
         <Section
            initial={{ opacity: 0 }}
